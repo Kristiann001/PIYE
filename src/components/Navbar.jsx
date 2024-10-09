@@ -8,7 +8,6 @@ export default function Navbar() {
                 </a>
                 <div className="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                     <button type="button" className="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false">
-                        <span className="sr-only">Open user menu</span>
                         <img className="w-8 h-8 rounded-full" src="https://cdn3.pixelcut.app/1/3/profile_picture_1728ecf2bd.jpg" alt="user photo" />
                     </button>
                 </div>

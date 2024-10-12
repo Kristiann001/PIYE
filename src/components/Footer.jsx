@@ -9,7 +9,7 @@ export default function Footer() {
                     <div className="mb-6 md:mb-0">
                         <a href="https://flowbite.com/" className="flex items-center">
                             <img src="https://t4.ftcdn.net/jpg/08/35/31/59/360_F_835315910_z7Z4ztNbE2pF2vTPa381Yh4bjqY2zlRp.jpg" className="h-8 me-3" alt="BnB" />
-                            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">{myBnB}</span>
+                            <span className="self-center text-2xl font-bold text-white">{myBnB}</span>
                         </a>
                     </div>
                 </div>

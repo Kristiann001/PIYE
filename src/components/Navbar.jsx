@@ -16,16 +16,16 @@ export default function Navbar() {
                 <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
                     <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-12 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800"> {/* Increased spacing here */}
                         <li className="md:mx-4"> {/* Add margin to the list items */}
-                            <a href="/" className="block py-2 px-3 text-white rounded hover:bg-gray-400 md:hover:bg-transparent md:hover:text-gray-600 md:p-0 dark:text-white">Home</a>
+                            <a href="/" className="block py-2 px-3 text-white rounded hover:bg-blue-600 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white">Home</a>
                         </li>
                         <li className="md:mx-4">
-                            <a href="/about" className="block py-2 px-3 text-white rounded hover:bg-gray-400 md:hover:bg-transparent md:hover:text-gray-600 md:p-0 dark:text-white">About</a>
+                            <a href="/about" className="block py-2 px-3 text-white rounded hover:bg-blue-600 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white">About</a>
                         </li>
                         <li className="md:mx-4">
-                            <a href="/properties" className="block py-2 px-3 text-white rounded hover:bg-gray-400 md:hover:bg-transparent md:hover:text-gray-600 md:p-0 dark:text-white">Property</a>
+                            <a href="/properties" className="block py-2 px-3 text-white rounded hover:bg-blue-600 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white">Property</a>
                         </li>
                         <li className="md:mx-4">
-                            <a href="/getaway" className="block py-2 px-3 text-white rounded hover:bg-gray-400 md:hover:bg-transparent md:hover:text-gray-600 md:p-0 dark:text-white">Get Away</a>
+                            <a href="/getaway" className="block py-2 px-3 text-white rounded hover:bg-blue-600 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white">Get Away</a>
                         </li>
                     </ul>
                 </div>

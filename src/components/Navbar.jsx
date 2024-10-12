@@ -1,10 +1,12 @@
 export default function Navbar() {
+
+    const myBnB = "MyBnB"
     return (
         <nav className="bg-green-500 border-b border-gray-200 dark:border-gray-700 backdrop-blur-lg h-20">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-full">
                 <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="https://t4.ftcdn.net/jpg/08/35/31/59/360_F_835315910_z7Z4ztNbE2pF2vTPa381Yh4bjqY2zlRp.jpg" className="h-8" alt="BnB" />
-                    <span className="self-center text-2xl font-bold text-white">MyBnB</span>
+                    <span className="self-center text-2xl font-bold text-white">{myBnB}</span>
                 </a>
                 <div className="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                     <button type="button" className="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false">

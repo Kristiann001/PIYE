@@ -1,6 +1,6 @@
 export default function Navbar() {
 
-    const myBnB = "MyBnB"
+    const myBnB = "PIYE"
     return (
         <nav className="bg-green-500 border-b border-gray-200 dark:border-gray-700 backdrop-blur-lg h-20">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-full">
@@ -9,8 +9,8 @@ export default function Navbar() {
                     <span className="self-center text-2xl font-bold text-white">{myBnB}</span>
                 </a>
                 <div className="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                    <button type="button" className="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false">
-                        <img className="w-8 h-8 rounded-full" src="https://cdn3.pixelcut.app/1/3/profile_picture_1728ecf2bd.jpg" alt="user photo" />
+                    <button type="button" className="flex font-medium text-md bg-blue-600 p-3 hover:text-white rounded-lg md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false">
+                        Book Now
                     </button>
                 </div>
                 <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">

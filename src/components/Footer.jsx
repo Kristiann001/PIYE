@@ -1,6 +1,6 @@
 export default function Footer() {
 
-    const myBnB = "MyBnB";
+    const myBnB = "PIYE";
     
     return (
         <footer className="bg-green-500 text-white mt-96">

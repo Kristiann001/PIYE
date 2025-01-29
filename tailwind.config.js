@@ -6,7 +6,22 @@ export default {
     "./node_modules/flowbite/**/*.js"
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        marquee: 'marquee 15s linear infinite',
+        'marquee-rtl': 'marquee-rtl 15s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        'marquee-rtl': {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+      },
+    },
   },
   plugins: [
     require('flowbite/plugin')

@@ -5,6 +5,8 @@ import Propertypage from "./pages/Propertypage"
 import Getaway from "./pages/Getaway"
 import Booknow from "./pages/Booknow"
 import Nopage from "./pages/Nopage"
+import Bnbprices from "./prices/bnbprices"
+import Getawayprices from "./prices/getawayprices"
 
 export default function App() {
   return (
@@ -15,7 +17,9 @@ export default function App() {
       <Route path="/about" element = {<Aboutpage />} />
       <Route path="/properties" element = {<Propertypage />} />
       <Route path="/getaway" element = {<Getaway />} />
-      <Route path="booknow" element = {<Booknow />} />
+      <Route path="/booknow" element = {<Booknow />} />
+      <Route path="/bnbprices" element = {<Bnbprices />} />
+      <Route path="/getawayprices" element = {<Getawayprices />} />
       <Route path="*" element = {<Nopage />} />
     </Routes>
     </BrowserRouter>

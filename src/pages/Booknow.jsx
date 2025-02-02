@@ -5,14 +5,16 @@ export default function Booknow() {
   return (
     <>
       <Navbar />
-      <div className="flex justify-center items-center space-x-4 min-h-screen"> {/* Flex container centered vertically and horizontally */}
+      <div className="flex flex-col sm:flex-row justify-center items-center space-x-0 sm:space-x-4 min-h-screen pt-32">
+        {" "}
+        {/* Flex container centered vertically and horizontally */}
         {/* BnB Book Now Card */}
-        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div className="max-w-xs sm:max-w-sm w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-6 sm:mb-0 sm:mr-4 transform transition-transform duration-300 hover:scale-105">
           <a href="#">
             <img
-              className="rounded-t-lg"
+              className="rounded-t-lg w-full h-48 object-cover"
               src="https://media.istockphoto.com/id/1398814566/photo/interior-of-small-apartment-living-room-for-home-office.jpg?s=612x612&w=0&k=20&c=8clwg8hTpvoEwL7253aKdYAUuAp1-usFOacNR5qX-Rg="
-              alt=""
+              alt="BNB Stay"
             />
           </a>
           <div className="p-5">
@@ -49,12 +51,12 @@ export default function Booknow() {
           </div>
         </div>
         {/* Getaway Book Now Card */}
-        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div className="max-w-xs sm:max-w-sm w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-6 sm:mb-0 sm:ml-4 transform transition-transform duration-300 hover:scale-105">
           <a href="#">
             <img
-              className="rounded-t-lg"
+              className="rounded-t-lg w-full h-48 object-cover"
               src="https://i0.wp.com/www.travelwithapen.com/wp-content/uploads/2021/07/Amboseli-Campfire-Place-scaled.jpg?ssl=1"
-              alt=""
+              alt="Getaway"
             />
           </a>
           <div className="p-5">

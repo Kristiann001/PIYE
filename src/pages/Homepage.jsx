@@ -77,24 +77,23 @@ export default function Homepage() {
           </section>
         </div>
       </div>
-
       {/* About Us Section */}
       <div className="py-16 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {/* Card Container */}
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden w-full lg:w-3/4 mx-auto">
-            <div className="lg:flex items-center">
-              {/* Image Section */}
-              <div className="w-full lg:w-1/2">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden w-full">
+            <div className="flex flex-col lg:flex-row items-center space-x-6">
+              {/* Image on top for mobile, left on large screens */}
+              <div className="flex-shrink-0 w-full lg:w-1/2">
                 <img
                   src="https://media.istockphoto.com/id/1365649825/photo/stylish-micro-apartment-for-one.jpg?s=612x612&w=0&k=20&c=B84a7PkFLhZGTG0GPDOxBs2yDjBvy2NHaqZw5_Vp878="
                   alt="About Us"
-                  className="object-cover w-full h-full rounded-t-lg lg:rounded-l-lg lg:rounded-r-none"
+                  className="rounded-lg shadow-lg object-cover w-full h-full"
                 />
               </div>
 
-              {/* Text Section */}
-              <div className="p-6 lg:w-1/2">
+              {/* Description on the right for large screens, below image for mobile */}
+              <div className="w-full lg:w-1/2 p-6">
                 <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white mb-4">
                   About Us
                 </h2>
@@ -175,7 +174,6 @@ export default function Homepage() {
         </div>
       </div>
 
-      {/* Features around */}
       {/* Features around */}
       <div className="max-w-6xl mx-auto p-6">
         <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6 text-center">

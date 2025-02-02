@@ -179,7 +179,7 @@ export default function Homepage() {
         <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6 text-center">
           What's Nearby
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-items-center">
           {/* Mall Card */}
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transform transition duration-300">
             <a href="#">

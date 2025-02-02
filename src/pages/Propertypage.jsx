@@ -31,7 +31,7 @@ export default function Propertypage() {
     <>
       <Navbar />
       {/* Page Header */}
-      <div className="text-center p-5">
+      <div className="text-center pt-32 p-5">
         <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
           Discover Your Perfect Stay
         </h1>

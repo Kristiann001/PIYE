@@ -36,30 +36,32 @@ export default function Homepage() {
         data-carousel="slide"
       >
         {/* Carousel wrapper */}
-        <div className="relative h-[400px] overflow-hidden rounded-lg md:h-[500px]">
+        <div className="relative h-[650px] overflow-hidden rounded-lg md:h-[700px]">
           {/* Dynamic carousel items */}
           {images.map((image, index) => (
             <div
               key={index}
-              className={`duration-700 ease-in-out transition-all ${
-                currentSlide === index ? "block" : "hidden"
+              className={`duration-700 ease-in-out transition-opacity ${
+                currentSlide === index
+                  ? "opacity-100 block"
+                  : "opacity-0 hidden"
               }`}
               data-carousel-item
             >
               <img
                 src={image}
-                className="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                className="absolute block w-full h-full object-cover top-0 left-0 transform scale-[1.1] origin-top"
                 alt={`Slide ${index + 1}`}
               />
             </div>
           ))}
           {/* Text Overlay for Jumbotron */}
-          <section className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <section className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 mt-10">
             <div className="text-center text-white px-4 mx-auto max-w-screen-xl py-24 lg:py-56">
-              <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl">
-                Welcome to PIYE BNB
+              <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white">
+                Welcome to PIYE Living
               </h1>
-              <p className="mb-8 text-lg font-normal lg:text-xl sm:px-16 lg:px-48">
+              <p className="mb-8 text-xl font-normal sm:px-16 lg:px-48 text-white">
                 Experience comfort and luxury like never before. Book your stay
                 with us today and enjoy a home away from home.
               </p>
@@ -74,88 +76,42 @@ export default function Homepage() {
             </div>
           </section>
         </div>
-
-        {/* Slider controls */}
-        <button
-          type="button"
-          className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          onClick={goToPreviousSlide}
-        >
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg
-              className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 1 1 5l4 4"
-              />
-            </svg>
-            <span className="sr-only">Previous</span>
-          </span>
-        </button>
-        <button
-          type="button"
-          className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          onClick={goToNextSlide}
-        >
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg
-              className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="m1 9 4-4-4-4"
-              />
-            </svg>
-            <span className="sr-only">Next</span>
-          </span>
-        </button>
       </div>
 
       {/* About Us Section */}
       <div className="py-16 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex items-center space-x-6">
-            {/* Image on the left */}
-            <div className="flex-shrink-0 w-1/2">
-              <img
-                src="https://media.istockphoto.com/id/1365649825/photo/stylish-micro-apartment-for-one.jpg?s=612x612&w=0&k=20&c=B84a7PkFLhZGTG0GPDOxBs2yDjBvy2NHaqZw5_Vp878="
-                alt="About Us"
-                className="rounded-lg shadow-lg object-cover w-full h-full"
-              />
-            </div>
+          {/* Card Container */}
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden w-full lg:w-3/4 mx-auto">
+            <div className="lg:flex items-center">
+              {/* Image Section */}
+              <div className="w-full lg:w-1/2">
+                <img
+                  src="https://media.istockphoto.com/id/1365649825/photo/stylish-micro-apartment-for-one.jpg?s=612x612&w=0&k=20&c=B84a7PkFLhZGTG0GPDOxBs2yDjBvy2NHaqZw5_Vp878="
+                  alt="About Us"
+                  className="object-cover w-full h-full rounded-t-lg lg:rounded-l-lg lg:rounded-r-none"
+                />
+              </div>
 
-            {/* Description on the right */}
-            <div className="w-1/2">
-              <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white mb-4">
-                About Us
-              </h2>
-              <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-                We are a hospitality business focused on providing exceptional
-                stays in beautiful and unique properties. Whether you are
-                looking for a cozy BnB experience or an adventurous getaway, we
-                offer personalized services to make your stay unforgettable.
-              </p>
-              <p className="text-lg text-gray-700 dark:text-gray-300">
-                Our goal is to offer you a home away from home with the comforts
-                and amenities you need to relax, recharge, and explore the
-                surroundings. Explore our properties and book your stay with us
-                today!
-              </p>
+              {/* Text Section */}
+              <div className="p-6 lg:w-1/2">
+                <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white mb-4">
+                  About Us
+                </h2>
+                <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
+                  We are a hospitality business focused on providing exceptional
+                  stays in beautiful and unique properties. Whether you are
+                  looking for a cozy BnB experience or an adventurous getaway,
+                  we offer personalized services to make your stay
+                  unforgettable.
+                </p>
+                <p className="text-lg text-gray-700 dark:text-gray-300">
+                  Our goal is to offer you a home away from home with the
+                  comforts and amenities you need to relax, recharge, and
+                  explore the surroundings. Explore our properties and book your
+                  stay with us today!
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -218,12 +174,14 @@ export default function Homepage() {
           </div>
         </div>
       </div>
+
+      {/* Features around */}
       {/* Features around */}
       <div className="max-w-6xl mx-auto p-6">
         <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6 text-center">
           What's Nearby
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
           {/* Mall Card */}
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transform transition duration-300">
             <a href="#">
@@ -310,8 +268,38 @@ export default function Homepage() {
               </a>
             </div>
           </div>
+
+          {/* Museum Card - Illusions Experience */}
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transform transition duration-300">
+            <a href="#">
+              <img
+                className="rounded-t-lg object-cover w-full h-48"
+                src="https://museumofillusionsnairobi.co.ke/wp-content/uploads/2024/12/Open-graf-Nairobi-EN.png"
+                alt="Museum"
+              />
+            </a>
+            <div className="p-5">
+              <a href="#">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  Nearby Museum
+                </h5>
+              </a>
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Visit the <strong>Museum of Illusions</strong> where you'll
+                experience mind-bending visual illusions, interactive exhibits,
+                and optical tricks that will leave you amazed and fascinated.
+              </p>
+              <a
+                href="https://museumofillusionsnairobi.co.ke/"
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Visit Website
+              </a>
+            </div>
+          </div>
         </div>
       </div>
+
       <div className="overflow-hidden mt-32">
         {/* Row 1 - Right to Left */}
         <div className="flex space-x-4 animate-marquee">

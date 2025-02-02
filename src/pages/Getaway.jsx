@@ -36,30 +36,32 @@ export default function Getaway() {
         data-carousel="slide"
       >
         {/* Carousel wrapper */}
-        <div className="relative h-[400px] overflow-hidden rounded-lg md:h-[500px]">
+        <div className="relative h-[650px] overflow-hidden rounded-lg md:h-[700px]">
           {/* Dynamic carousel items */}
           {images.map((image, index) => (
             <div
               key={index}
-              className={`duration-700 ease-in-out transition-all ${
-                currentSlide === index ? "block" : "hidden"
+              className={`duration-700 ease-in-out transition-opacity ${
+                currentSlide === index
+                  ? "opacity-100 block"
+                  : "opacity-0 hidden"
               }`}
               data-carousel-item
             >
               <img
                 src={image}
-                className="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                className="absolute block w-full h-full object-cover top-0 left-0 transform scale-[1.1] origin-top"
                 alt={`Slide ${index + 1}`}
               />
             </div>
           ))}
           {/* Text Overlay for Jumbotron */}
-          <section className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <section className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 mt-10">
             <div className="text-center text-white px-4 mx-auto max-w-screen-xl py-24 lg:py-56">
-              <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl">
+              <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white">
                 Welcome to PIYE Getaway
               </h1>
-              <p className="mb-8 text-lg font-normal lg:text-xl sm:px-16 lg:px-48">
+              <p className="mb-8 text-xl font-normal sm:px-16 lg:px-48 text-white">
                 Escape to serenity and comfort. Discover breathtaking views,
                 luxurious accommodations, and unforgettable experiences tailored
                 just for you.
@@ -75,56 +77,6 @@ export default function Getaway() {
             </div>
           </section>
         </div>
-
-        {/* Slider controls */}
-        <button
-          type="button"
-          className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          onClick={goToPreviousSlide}
-        >
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg
-              className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 1 1 5l4 4"
-              />
-            </svg>
-            <span className="sr-only">Previous</span>
-          </span>
-        </button>
-        <button
-          type="button"
-          className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          onClick={goToNextSlide}
-        >
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg
-              className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="m1 9 4-4-4-4"
-              />
-            </svg>
-            <span className="sr-only">Next</span>
-          </span>
-        </button>
       </div>
 
       {/* Additional Text Section */}
@@ -155,9 +107,9 @@ export default function Getaway() {
       {/* My Story Section */}
       <div className="py-16 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex items-center space-x-6">
-            {/* Image on the left */}
-            <div className="flex-shrink-0 w-1/2">
+          <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-6">
+            {/* Image on top in mobile, left in desktop */}
+            <div className="flex-shrink-0 w-full md:w-1/2 mb-6 md:mb-0">
               <img
                 src="https://media.istockphoto.com/id/1213840216/photo/luxury-travel-romantic-couple-in-beach-hotel.jpg?s=612x612&w=0&k=20&c=1m4GfnUTJV4zZEDr_p1OYVQhmwM5F30MrbUhzYVacko="
                 alt="Our Story"
@@ -165,36 +117,40 @@ export default function Getaway() {
               />
             </div>
 
-            {/* Description on the right */}
-            <div className="w-1/2">
-              <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white mb-4">
-                Our Story
-              </h2>
-              <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-                PIYE Getaway was founded in February 2025 with a vision to
-                redefine rural tourism in Kenya. Nestled in the tranquil
-                landscapes of Meru, our mission is to provide tourists with a
-                unique opportunity to experience the charm of Kenya’s rural
-                areas while enjoying the comforts of modern amenities.
-              </p>
-              <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-                More than just a getaway, PIYE is a destination where
-                traditional Kenyan hospitality meets contemporary luxury. We aim
-                to make rural areas not just a place to visit but a hub for
-                memorable events, from weddings to concerts, offering stunning
-                backdrops and exceptional service.
-              </p>
-              <p className="text-lg text-gray-700 dark:text-gray-300">
-                At PIYE Getaway, we believe in bringing modernity to the heart
-                of rural Kenya. Our vision is to create a bridge between
-                tradition and innovation, ensuring every visitor enjoys a
-                seamless blend of culture, comfort, and adventure. Discover the
-                beauty of rural Kenya reimagined—your perfect escape awaits.
-              </p>
+            {/* Description on the right (for desktop), full-width for mobile */}
+            <div className="w-full md:w-1/2">
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white mb-4">
+                  Our Story
+                </h2>
+                <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
+                  PIYE Getaway was founded in February 2025 with a vision to
+                  redefine rural tourism in Kenya. Nestled in the tranquil
+                  landscapes of Meru, our mission is to provide tourists with a
+                  unique opportunity to experience the charm of Kenya’s rural
+                  areas while enjoying the comforts of modern amenities.
+                </p>
+                <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
+                  More than just a getaway, PIYE is a destination where
+                  traditional Kenyan hospitality meets contemporary luxury. We
+                  aim to make rural areas not just a place to visit but a hub
+                  for memorable events, from weddings to concerts, offering
+                  stunning backdrops and exceptional service.
+                </p>
+                <p className="text-lg text-gray-700 dark:text-gray-300">
+                  At PIYE Getaway, we believe in bringing modernity to the heart
+                  of rural Kenya. Our vision is to create a bridge between
+                  tradition and innovation, ensuring every visitor enjoys a
+                  seamless blend of culture, comfort, and adventure. Discover
+                  the beauty of rural Kenya reimagined—your perfect escape
+                  awaits.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
       {/* Features around */}
       <div className="max-w-6xl mx-auto p-6">
         <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6 text-center">

@@ -2,7 +2,7 @@ export default function Footer() {
   const myBnB = "PIYE";
   return (
     <footer className="bg-green-500 text-white mt-32">
-      <div className="mx-auto w-full max-w-screen-xl p-10 py-10 lg:py-10">
+      <div className="mx-auto w-full max-w-screen-xl p-6 sm:p-10 py-10 lg:py-10">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="https://flowbite.com/" className="flex items-center">
@@ -20,7 +20,7 @@ export default function Footer() {
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-4" />
         <div className="sm:flex sm:items-center sm:justify-between">
           {/* Icons on the left */}
-          <div className="flex flex-row space-x-4 sm:justify-start">
+          <div className="flex flex-wrap justify-center sm:justify-start space-x-4 sm:space-x-6 mb-6 sm:mb-0">
             {/* Facebook Icon */}
             <a
               href="facebook"

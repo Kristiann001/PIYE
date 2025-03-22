@@ -1,5 +1,5 @@
 export default function Footer() {
-  const myBnB = "PIYE";
+  const myBnB = "piye";
   return (
     <footer className="bg-green-500 text-white mt-32">
       <div className="mx-auto w-full max-w-screen-xl p-6 sm:p-10 py-10 lg:py-10">

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function Navbar() {
-  const myBnB = "PIYE";
+  const myBnB = "piye";
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {

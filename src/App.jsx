@@ -1,6 +1,6 @@
 import { BrowserRouter , Routes , Route } from "react-router-dom"
 import Homepage from "./pages/Homepage"
-import Aboutpage from "./pages/Aboutpage"
+import Gallerypage from "./pages/Gallerypage"
 import Propertypage from "./pages/Propertypage"
 import Getaway from "./pages/Getaway"
 import Booknow from "./pages/Booknow"
@@ -14,7 +14,7 @@ export default function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element = {<Homepage />} />
-      <Route path="/about" element = {<Aboutpage />} />
+      <Route path="/gallery" element = {<Gallerypage />} />
       <Route path="/properties" element = {<Propertypage />} />
       <Route path="/getaway" element = {<Getaway />} />
       <Route path="/booknow" element = {<Booknow />} />

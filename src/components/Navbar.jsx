@@ -37,10 +37,10 @@ export default function Navbar() {
         {/* Navigation Links */}
         <div className={`absolute top-20 left-0 w-full bg-white dark:bg-white shadow-lg md:relative md:top-0 md:w-auto md:shadow-none md:flex ${isOpen ? "block" : "hidden"}`}>
           <ul className="font-medium flex flex-col md:flex-row md:space-x-8 p-4 md:p-0">
-            <li><a href="/" className="block py-2 px-3 text-black hover:text-green-600 dark:hover:text-ggreen-600 rounded md:hover:bg-transparent">Home</a></li>
-            <li><a href="/about" className="block py-2 px-3 text-black hover:text-green-600 dark:hover:text-ggreen-600 rounded md:hover:bg-transparent">About</a></li>
-            <li><a href="/properties" className="block py-2 px-3 text-black hover:text-green-600 dark:hover:text-ggreen-600 rounded md:hover:bg-transparent">Properties</a></li>
-            <li><a href="/getaway" className="block py-2 px-3 text-black hover:text-green-600 dark:hover:text-ggreen-600 rounded md:hover:bg-transparent">Getaway</a></li>
+            <li><a href="/" className="block py-2 px-3 text-black hover:text-green-600 dark:hover:text-green-600 rounded md:hover:bg-transparent">Home</a></li>
+            <li><a href="/gallery" className="block py-2 px-3 text-black hover:text-green-600 dark:hover:text-green-600 rounded md:hover:bg-transparent">Gallery</a></li>
+            <li><a href="/properties" className="block py-2 px-3 text-black hover:text-green-600 dark:hover:text-green-600 rounded md:hover:bg-transparent">Properties</a></li>
+            <li><a href="/getaway" className="block py-2 px-3 text-black hover:text-green-600 dark:hover:text-green-600 rounded md:hover:bg-transparent">Getaway</a></li>
           </ul>
         </div>
 

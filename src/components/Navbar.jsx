@@ -17,7 +17,7 @@ export default function Navbar() {
             className="h-10 w-10 rounded-full"
             alt="BnB"
           />
-          <span className="self-center text-2xl font-semibold text-white">
+          <span className="self-center text-2xl font-semibold text-black">
             {myBnB}
           </span>
         </a>

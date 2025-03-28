@@ -59,7 +59,7 @@ export default function Homepage() {
           <section className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 mt-10">
             <div className="text-center text-white px-4 mx-auto max-w-screen-xl py-24 lg:py-56">
               <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white">
-                Welcome to PIYE Living
+                WELCOME TO PIYE LIVING
               </h1>
               <p className="mb-8 text-xl font-normal sm:px-16 lg:px-48 text-white">
                 Experience comfort and luxury like never before. Book your stay
@@ -298,7 +298,7 @@ export default function Homepage() {
         </div>
       </div>
 
-      <div className="overflow-hidden mt-32">
+      <div className="overflow-hidden mt-10">
         {/* Row 1 - Right to Left */}
         <div className="flex space-x-4 animate-marquee">
           <img

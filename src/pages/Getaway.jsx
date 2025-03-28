@@ -59,7 +59,7 @@ export default function Getaway() {
           <section className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 mt-10">
             <div className="text-center text-white px-4 mx-auto max-w-screen-xl py-24 lg:py-56">
               <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white">
-                Welcome to PIYE Getaway
+                WELCOME TO PIYE MERU
               </h1>
               <p className="mb-8 text-xl font-normal sm:px-16 lg:px-48 text-white">
                 Escape to serenity and comfort. Discover breathtaking views,
@@ -82,7 +82,7 @@ export default function Getaway() {
       {/* Additional Text Section */}
       <div className="px-6 py-12 text-gray-800 bg-gray-50">
         <h2 className="text-3xl font-extrabold text-center mb-6">
-          PIYE Getaway
+          PIYE Meru
         </h2>
         <h3 className="text-xl font-semibold text-center mb-4">
           Luxury Accommodation in Meru

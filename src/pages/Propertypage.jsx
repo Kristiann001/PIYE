@@ -43,7 +43,7 @@ export default function Propertypage() {
       {/* Cards Section */}
       <div className="space-y-14 p-5">
         {/* Card 1 - Apartment */}
-        <div className="flex flex-col md:flex-row-reverse items-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div className="mx-5 flex flex-col md:flex-row-reverse items-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <div className="w-full md:w-1/2 lg:w-2/5">
             <Slider {...settings}>
               {bnbImages.map((image, index) => (
@@ -59,7 +59,7 @@ export default function Propertypage() {
           </div>
           <div className="p-7 w-full md:w-1/2 lg:w-3/5">
             <h5 className="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
-              PIYE BNB/APARTMENT
+              PIYE APARTMENT
             </h5>
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
               Nestled in the heart of Nairobi, this cozy BnB and modern
@@ -68,27 +68,12 @@ export default function Propertypage() {
               stunning city views, it’s perfect for both leisure and business
               travelers seeking a comfortable and memorable stay.
             </p>
-            <div className="space-x-4">
+            <div className="flex flex-col space-y-3 md:flex-row md:space-x-4 md:space-y-0">
               <a
                 href="/booknow"
                 className="inline-flex items-center px-4 py-3 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 Inquire Now
-                <svg
-                  className="rtl:rotate-180 w-4 h-4 ms-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
               </a>
               <a
                 href="/bnbprices"
@@ -101,7 +86,7 @@ export default function Propertypage() {
         </div>
 
         {/* Card 2 - Getaway */}
-        <div className="flex flex-col md:flex-row items-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div className="mx-5 flex flex-col md:flex-row items-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <div className="w-full md:w-1/2 lg:w-2/5">
             <Slider {...settings}>
               {getawayImages.map((image, index) => (
@@ -124,31 +109,14 @@ export default function Propertypage() {
               modern comfort with breathtaking natural beauty. Perfect for a
               family retreat or romantic escape, it offers activities like
               hiking, bird watching, and outdoor dining. Create lasting
-              memories in this idyllic destination. The spacious grounds allow
-              for outdoor gatherings and adventures, while the cozy interiors
-              provide a relaxing space after a day of exploring.
+              memories in this idyllic destination.
             </p>
-            <div className="space-x-4">
+            <div className="flex flex-col space-y-3 md:flex-row md:space-x-4 md:space-y-0">
               <a
                 href="/booknow"
                 className="inline-flex items-center px-4 py-3 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 Inquire Now
-                <svg
-                  className="rtl:rotate-180 w-4 h-4 ms-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
               </a>
               <a
                 href="/getawayprices"

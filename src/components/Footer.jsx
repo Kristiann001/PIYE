@@ -58,7 +58,7 @@ export default function Footer() {
             {/* WhatsApp Icon */}
             <a
               href="whatsapp"
-              className="text-black hover:text-green-700 dark:hover:text-black"
+              className="text-black hover:text-green-500 dark:hover:text-black"
             >
                   <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -6,8 +6,6 @@ export default function Booknow() {
     <>
       <Navbar />
       <div className="flex flex-col sm:flex-row justify-center items-center space-x-0 sm:space-x-4 min-h-screen pt-32">
-        {" "}
-        {/* Flex container centered vertically and horizontally */}
         {/* BnB Book Now Card */}
         <div className="max-w-xs sm:max-w-sm w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-6 sm:mb-0 sm:mr-4 transform transition-transform duration-300 hover:scale-105">
           <a href="#">
@@ -20,16 +18,16 @@ export default function Booknow() {
           <div className="p-5">
             <a href="#">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Book Now for BNB Stay
+                Book Now for piye Living
               </h5>
             </a>
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              Enjoy a cozy and personalized stay at our charming Bed and
-              Breakfast.
+              Enjoy a cozy and personalized stay at our charming Bed and Breakfast.
             </p>
+            <div className="flex space-x-2">
             <a
               href="#"
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Book Now
               <svg
@@ -48,6 +46,13 @@ export default function Booknow() {
                 />
               </svg>
             </a>
+              <a
+                href="/payment"
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-500 dark:hover:bg-green-600 dark:focus:ring-green-700"
+              >
+                Mpesa
+              </a>
+            </div>
           </div>
         </div>
         {/* Getaway Book Now Card */}
@@ -62,16 +67,16 @@ export default function Booknow() {
           <div className="p-5">
             <a href="#">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Book Now for Your Getaway
+                Book Now for piye Meru
               </h5>
             </a>
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              Escape to a beautiful destination with our all-inclusive getaway
-              packages.
+              Escape to a beautiful destination with our all-inclusive getaway packages.
             </p>
+            <div className="flex space-x-2">
             <a
               href="#"
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Book Now
               <svg
@@ -90,6 +95,13 @@ export default function Booknow() {
                 />
               </svg>
             </a>
+              <a
+                href="/payment"
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-500 dark:hover:bg-green-600 dark:focus:ring-green-700"
+              >
+                Mpesa
+              </a>
+            </div>
           </div>
         </div>
       </div>
